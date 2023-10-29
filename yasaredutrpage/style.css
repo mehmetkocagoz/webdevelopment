@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+/************ HEADER ************/
+header{
+    display: inline;
+}
+
+.header_wrapper{
+    width: 70%;
+    margin-left: 18rem;
+    margin-top: 2rem;
+}
+
+.header_top_menu ul{
+    display: flex;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    font-size: 10px;
+    margin: 1rem;
+}
+
+.header_top_menu a{
+    padding: 1rem;
+}
+
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.menu_bar ul{
+    display: flex;
+    margin-top: 2rem;
+}
+.menu_bar li{
+    padding-right:1rem ;
+    color: rgb(255, 0, 13);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/************ SLIDING IMAGES ************/
+
+.sliding_images{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 630px;
+    padding: 2rem;
+}
+
+.slider{
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;   
+}
+
+.slider_nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider_nav a{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 20%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider_nav a:hover{
+    opacity: 1;
+    background-color: rgb(75, 56, 56);
+    
+}
+
+.slider_nav a.active{
+    background-color: rgb(75, 56, 56);
+}
+
+/************ STATIC MAIN FRAME ************/
+
+.static_main_frame{
+    margin-left:2rem ;
+    height: 26rem;
+    display: grid;
+    grid-template-columns: 18% auto;
+}
+
+.static_main_frame_left{
+    background-color: grey;
+    height: 100%;
+}
+
+.static_main_frame_left .title{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    color: white;
+}
+
+.static_main_frame_left .content{
+    padding: 1rem 1rem 1rem 1rem;
+    height: 18rem;
+}
+
+.static_main_frame_left .content ul{
+    display: block;
+    line-height: 2rem;
+}
+
+.static_main_frame_left .content li{
+    border-bottom: 1px solid black;
+    padding-top: 0.4rem;
+}
+.static_main_frame_left .content li:last-child {
+    border-bottom: none; /* Remove the border for the last list item */
+}
+
+.static_main_frame_main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.static_main_frame_main .content{
+    padding: 1rem 0rem 1rem 1rem;
+    display: block;
+}
+
+.static_main_frame_main .content:last-child{
+    padding-right: 1rem;
+}
+
+.content .image_container{
+    height: 60%;
+    width: 100%;
+}
+.content .image_container img{
+    height: 100%;
+    width: 100%;
+}
+
+.content .content_paragraph{
+    padding-top: 1rem;
+}
+
+.content .content_paragraph h1{
+    font-size: 12px;
+    color: blue;
+}
+
+/************ EVENT SCHEDULE FRAME ************/
+
+.event_schedule_frame{
+    display: block;
+    margin: 2rem 2rem 2rem 2rem;
+    height: 600px;
+}
+
+.event_schedule_frame_main_top{
+    display: block;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.event_schedule_frame_main_top .date_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date_list .date_list_left ul{
+    display: flex;
+}
+
+.date_list .date_list_right ul{
+    display: flex;
+}
+
+.date_list a{
+    padding: 1rem;
+    color: black;
+    font-size: 20px;
+}
+
+.date_list a:hover{
+    background-color: blue;
+}
+
+hr {
+    border-top: 2px solid #333; 
+    margin: 20px 0; 
+}
+
+.event_schedule_frame_main_content{
+    display: flex;
+}
+
+.event_schedule_frame_main_content .content_frame{
+    width: 33%;
+    height: 90%;
+    
+}
+
+.event_schedule_frame_main_content .content_frame img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event_schedule_frame_main_content .content_frame .content_paragraph a{
+    text-align: center;
+}
+
+.event_schedule_frame_main_content .content_frame .content_date{
+    text-align: center;
+}
+
+/************ VIDEO CONTENT FRAME ************/
+
+.video_content{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.video_content .video_content_main{
+    display: flex;
+}
+
+/************ CAMPUS INFO FRAME ************/
+
+.campus_info_frame{
+    margin: 2rem 4rem 2rem 4rem;
+    display: block;
+    height: 500px;
+    background-image: url(yu-pattern-mavi.jpg);
+    color: white;
+}
+
+.campus_info_frame .campus_info_top{
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.campus_info_top .info_title{
+    font-size: 20px;
+}
+
+.campus_info_top .info_subtitle{
+    font-size: 25px;
+}
+
+.campus_info_frame_content{
+    height: 350px;
+    display: grid;
+    grid-template-columns: 30rem auto;
+}
+
+.campus_info_frame_content .content_left{
+    background-color: red;
+}
+
+.campus_info_frame_content .content_right{
+    background-color: blue;
+}
