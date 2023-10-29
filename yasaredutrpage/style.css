@@ -258,7 +258,7 @@ hr {
 .campus_info_frame{
     margin: 2rem 4rem 2rem 4rem;
     display: block;
-    height: 500px;
+    height: 550px;
     background-image: url(yu-pattern-mavi.jpg);
     color: white;
 }
@@ -282,9 +282,52 @@ hr {
 }
 
 .campus_info_frame_content .content_left{
-    background-color: red;
+    display: block;
+    padding: 2rem 2rem;
 }
 
-.campus_info_frame_content .content_right{
+.campus_info_frame_content .social_media_nav{
+    display: flex;
+    width: 200px;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.social_media_nav a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #afaa63;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.social_media_nav a:hover{
     background-color: blue;
+    transition: .5s;
+}
+
+.campus_info_frame_content .subtitle{
+    padding-top: 2rem;
+}
+
+.campus_info_frame_content .clickable_element_wrapper{
+    margin: 1rem 0rem 0rem 2rem;
+}
+
+.clickable_element_wrapper .clickable_element{
+    display: flex;
+    margin: 2rem 0rem 0rem 1rem;
+    height: 50px;
+}
+
+.clickable_element .click_text{
+    display: flex;
+    height: 100%;
+    padding: 0rem 1rem 0rem 1rem;
+    background-color: wheat;
+    border-radius: 50px !important;
+    align-items: center;
 }
