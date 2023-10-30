@@ -184,7 +184,7 @@ header{
 .event_schedule_frame{
     display: block;
     margin: 2rem 2rem 2rem 2rem;
-    height: 600px;
+    height: 520px;
 }
 
 .event_schedule_frame_main_top{
@@ -203,6 +203,11 @@ header{
 
 .date_list .date_list_right ul{
     display: flex;
+}
+
+.date_list .date_list_right .active{
+    background-color: blue;
+    color:white;
 }
 
 .date_list a{
@@ -251,6 +256,11 @@ hr {
 
 .video_content .video_content_main{
     display: flex;
+}
+
+.video_content_wrapper img{
+    width: 100%;
+    height: 100%;
 }
 
 /************ CAMPUS INFO FRAME ************/
