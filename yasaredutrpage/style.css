@@ -345,8 +345,20 @@ hr {
 }
 
 .content_right{
-    background-color: hotpink;
+    display: flex;
 }
+
+.content_right .content_right_content{
+    margin: 2rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.content_right .content_right_content img{
+    width: 100%;
+}
+
+
 
 /************ YASAR INFO FRAME ************/
 
@@ -354,30 +366,78 @@ hr {
     margin: 2rem 2rem 2rem 2rem;
     display: flex;
     height: 300px;
-    background-color: rgb(63, 163, 63);
 }
 
 .yasar_info .yasar_info_comment_wrapper{
-    background-color: aqua;
-    width: 35%;
+    width: 50%;
+    display: block;
+    background-color: rgb(228, 223, 223);
+    text-align: center;
+}
+
+.yasar_info_comment_wrapper .comment{
+    padding: 4rem;
+    font-size: large;
+}
+
+.yasar_info_comment_wrapper .comment .top img{
+    height: 60px;
+    width: 60px;
+}
+
+.yasar_info_comment_wrapper .comment .middle{
+    padding-top: 1rem;
+}
+
+.middle p{
+    padding-top: 0.6rem;
+}
+
+.middle .box{
+    display: flex;
+    padding-top: 1rem;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+.box a{
+    background-color: white;
+    height: 25px;
+    width: 100px;
+    border-radius: 50px !important;
 }
 
 .yasar_info .yasar_info_content{
     display: flex;
     width: 100%;
-    background-color: red;
 }
 
 .yasar_info_content .content_component_wrapper{
-    width: 50%;
-    background-color: bisque;
-}
-
-.content_image{
+    width: 680px;
+    background-color: rgb(13, 13, 95);
     display: flex;
 }
 
-.content_image a{}
+.content_component_wrapper .content_component{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: wheat;
+}
+
+.content_component .content{
+    margin-top: 3rem;
+}
+
+.content_component .content img{
+    width: 130px;
+}
+
+.content_image{
+    width: 100%;
+}
 
 .content_image img{
     width: 100%;
