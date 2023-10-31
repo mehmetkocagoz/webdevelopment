@@ -443,3 +443,16 @@ hr {
     width: 100%;
     height: 100%;
 }
+
+/************ YASAR INFO FRAME ************/
+
+.yasar_media{
+    height: 400px;
+}
+
+.yasar_media .media_content_wrapper{
+    margin: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 223, 223);
+}
