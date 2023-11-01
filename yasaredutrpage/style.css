@@ -13,13 +13,13 @@ html{
 }
 /************ HEADER ************/
 header{
-    display: inline;
+    display: block;
 }
 
 .header_wrapper{
-    width: 70%;
     margin-left: 18rem;
     margin-top: 2rem;
+    margin-right: 20rem;
 }
 
 .header_top_menu ul{
@@ -42,13 +42,48 @@ header{
 
 .menu_bar ul{
     display: flex;
-    margin-top: 2rem;
+    height: 100%;
 }
 .menu_bar li{
-    padding-right:1rem ;
-    color: rgb(255, 0, 13);
+    display: flex;
+    padding: 1rem;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.menu_bar li a{
+    display: flex;
+    color: #142e46;
+    height: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_bar li a:hover{
+    color: white;
+    background-color:#142e46 ;
+}
+.header_hizli_menu{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.header_hizli_menu a{
+    background-color: #142e46;
+    height: 50%;
+    width: 80%;
+    color: white;
+    border-radius: 10% !important;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /************ SLIDING IMAGES ************/
