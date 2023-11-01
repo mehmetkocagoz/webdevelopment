@@ -513,3 +513,21 @@ footer{
     color: white;
     font-size: 10px;
 }
+
+/************ STICKY ************/
+
+.sticky{
+    background-color: #5cb85c;
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    bottom: 1rem;
+    right: 0rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sticky a{
+    color: white;
+}
