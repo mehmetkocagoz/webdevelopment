@@ -309,7 +309,7 @@ hr {
     margin: 2rem 4rem 2rem 4rem;
     display: block;
     height: 550px;
-    background-image: url(yu-pattern-mavi.jpg);
+    background-image: url("../yu-pattern-mavi.jpg");
     color: white;
 }
 
