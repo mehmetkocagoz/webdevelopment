@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html, body {
+    height: 100vh;
+}
+
+.navbar.bg-body-tertiary {
+    background-color: black;
+}
+
+.content{
+    background-image: url(b_image.jpeg);
+    height:calc(100vh - 56px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
