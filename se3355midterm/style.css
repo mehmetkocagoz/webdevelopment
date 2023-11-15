@@ -19,3 +19,61 @@ html, body {
     background-size: cover;
     background-position: center;
 }
+
+form{
+    background-color: rgba(0, 0, 0, 0.5); /* Red background with 50% transparency */
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: block;
+    color: white;
+}
+
+.form-content{
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.input-box{
+    display: flex;
+    height: 10%;
+    margin-top: 1.5rem;
+}
+
+#radio{
+    display: block;
+}
+
+.input-box h3{
+    width: 10rem;
+    font-size: 1rem;
+}
+
+.input-box .input-field{
+    flex-grow: 1;
+    padding-left: 1rem;
+    display: flex;
+}
+
+.input-field select{
+    width: 80%;
+}
+
+input,
+select{
+    height: 60%;
+}
+
+.input-field .input-element:last-child{
+    margin-left: 3rem;
+}
+
+.submit-button{
+    height: 3rem;
+    width: 10rem;
+    background-color: aqua;
+    border-radius: 0.8rem;
+}
