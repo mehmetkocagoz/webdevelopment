@@ -20,17 +20,86 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="redirect.html">Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="redirect.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="redirect.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="content">
-    <select id="apiDataDropdown"></select>
+    <form action="" id="basic-form">
+      <div class="form-content">
+        <div class="input-box">
+          <h3>Name</h2>
+          <div class="input-field">
+            <div class="input-element">
+              <input type="text" required="" id="firstName">
+              <p>First Name</p>
+            </div>
+            <div class="input-element">
+              <input type="text" required="" id="lastName">
+              <p>Last Name</p>
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+            <h3>Company</h3>
+            <div class="input-field">
+              <select id="apiDataDropdownCompany">
+                <option value="company"></option>
+              </select>
+            </div>  
+        </div>
+        <div class="input-box">  
+            <h3>Email</h3>
+          <div class="input-field">
+            <input type="email" placeholder="" required="" id="email">
+          </div>
+        </div>
+        <div class="input-box">
+          <h3>Phone</h3>
+          <div class="input-field">
+            <div class="input-element">
+              <input type="number" placeholder="Area Code" required="" id="areaCode">
+            </div>
+            <div class="input-element">
+              <input type="number" placeholder="Phone Number" required="" id="phoneNumber">
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+          <h3>Subject</h3>
+          <div class="input-field">
+            <select id="apiDataDropdownSubject">
+              <option value="" disabled selected >--Choose Option--</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box" id="radio">
+          <h3>Are you beginner?</h3>
+          <div class="input-field">
+            <div class="input-element">
+              <input type="radio" name="radioGroup" id="beginnerYes"> Yes
+            </div>
+            <div class="input-element">
+              <input type="radio" name="radioGroup" id="beginnerNo"> No
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field">
+            <input type="submit" class="submit-button" value="Register">
+          </div>
+        </div>
+      </div>
+    </form>
+    
   </div>
 <!-- Create a select element to hold the options -->
 
