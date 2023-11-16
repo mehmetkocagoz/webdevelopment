@@ -52,23 +52,43 @@ form{
     font-size: 1rem;
 }
 
+.input-box p{
+    font-size: 0.8rem;
+}
+
 .input-box .input-field{
     flex-grow: 1;
     padding-left: 1rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .input-field select{
-    width: 80%;
+    width: 100%;
 }
 
 input,
 select{
     height: 60%;
+    width: 100%;
 }
 
-.input-field .input-element:last-child{
-    margin-left: 3rem;
+.input-field .input-element{
+    width: 40%;
+}
+
+#radio-field{
+    width: 40%;
+}
+
+#radio1,
+#radio2{
+    width: 30%;
+}
+
+#radio1 input,
+#radio2 input{
+    width: 40%;
 }
 
 .submit-button{
