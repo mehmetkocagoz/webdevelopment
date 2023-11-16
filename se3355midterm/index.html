@@ -52,7 +52,7 @@
             <h3>Company</h3>
             <div class="input-field">
               <select id="apiDataDropdownCompany">
-                <option value="company"></option>
+                <option value="company" disabled selected></option>
               </select>
             </div>  
         </div>
@@ -66,10 +66,14 @@
           <h3>Phone</h3>
           <div class="input-field">
             <div class="input-element">
-              <input type="number" placeholder="Area Code" required="" id="areaCode">
+              <select id="apiDataDropdownAreaCode">
+                <option value="areacode" disabled selected></option>
+              </select>
+              <p>Area Code</p>
             </div>
             <div class="input-element">
-              <input type="number" placeholder="Phone Number" required="" id="phoneNumber">
+              <input type="tel" required="" id="phoneNumber">
+              <p>Phone Number</p>
             </div>
           </div>
         </div>
@@ -83,11 +87,11 @@
         </div>
         <div class="input-box" id="radio">
           <h3>Are you beginner?</h3>
-          <div class="input-field">
-            <div class="input-element">
+          <div class="input-field" id="radio-field">
+            <div class="input-element" id="radio1">
               <input type="radio" name="radioGroup" value="option1" id="beginnerYes"> Yes
             </div>
-            <div class="input-element">
+            <div class="input-element" id="radio2">
               <input type="radio" name="radioGroup" value="option2" id="beginnerNo"> No
             </div>
           </div>
