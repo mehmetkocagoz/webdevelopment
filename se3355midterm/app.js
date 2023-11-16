@@ -64,6 +64,26 @@ fetch(apiUrlSubject)
     console.error('Error fetching data:', error);
   });
  
+const apiUrlAreaCode = 'https://run.mocky.io/v3/589b44db-2a4c-4d16-b535-8d9117ebc9eb'
+
+const selectDropdownAreaCode = document.getElementById("apiDataDropdownAreaCode");
+// Fetch data from the API
+fetch(apiUrlAreaCode)
+  .then(response => response.json())
+  .then(data => {
+    // Assuming the structure of your API response matches the example structure
+    console.log(data);
+   // Iterate through city_area_codes and append options to the dropdown
+    data.forEach(areaCode => {
+    const option = document.createElement("option");
+    option.value = areaCode.areaCode;
+    option.text = areaCode.areaCode;
+    selectDropdownAreaCode.appendChild(option);
+  });
+  })
+  .catch(error => console.error('Error fetching data:', error));
+  
+
 
   //Validation on submit
   document.getElementById('basic-form').addEventListener('submit', function(event) {
@@ -81,7 +101,7 @@ fetch(apiUrlSubject)
     var lastName = document.getElementById('lastName').value;
     var company = document.getElementById('apiDataDropdownCompany').value;
     var email = document.getElementById('email').value;
-    var areaCode = document.getElementById('areaCode').value;
+    var areaCode = document.getElementById('apiDataDropdownAreaCode').value;
     var phoneNumber = document.getElementById('phoneNumber').value;
     var subject = document.getElementById('apiDataDropdownSubject').value;
     var beginnerYes = document.getElementById('beginnerYes').checked;
@@ -99,10 +119,12 @@ fetch(apiUrlSubject)
       displayErrorMessage('Please enter Last Name.');
       isValid = false;
     }
-
+    
     if (company === '') {
       displayErrorMessage('Please select a Company.');
       isValid = false;
+    }else {
+      console.log(company);
     }
 
     if (email.trim() === '') {
@@ -110,8 +132,13 @@ fetch(apiUrlSubject)
       isValid = false;
     }
 
-    if (areaCode.trim() === '' || phoneNumber.trim() === '') {
-      displayErrorMessage('Please enter both Area Code and Phone Number.');
+    if (areaCode.trim() === '') {
+      displayErrorMessage('Please enter Area Code.');
+      isValid = false;
+    }
+
+    if ((phoneNumber.trim() === '')&(length(phoneNumber) === 7)) {
+      displayErrorMessage('Please enter valid phone number.');
       isValid = false;
     }
 
