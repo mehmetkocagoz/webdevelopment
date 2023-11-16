@@ -23,7 +23,7 @@ fetch(apiUrl)
     // Iterate through the data and create an option for each item
     data.forEach(item => {
       const option = document.createElement('option');
-      option.value = item.companyId; // Set the value attribute based on your data structure
+      option.value = item.companyName; // Set the value attribute based on your data structure
       option.text = item.companyName; // Set the text content based on your data structure
       selectDropdown.appendChild(option); // Append the option to the selectDropdown
     });
@@ -108,7 +108,7 @@ fetch(apiUrlAreaCode)
     var beginnerNo = document.getElementById('beginnerNo').checked;
 
     var isValid = true;
-
+   
     // Basic validation
     if (firstName.trim() === '') {
       displayErrorMessage('Please enter First Name.');
@@ -120,11 +120,9 @@ fetch(apiUrlAreaCode)
       isValid = false;
     }
     
-    if (company === '') {
+    if (company === ''|| company === 'company') {
       displayErrorMessage('Please select a Company.');
       isValid = false;
-    }else {
-      console.log(company);
     }
 
     if (email.trim() === '') {
@@ -137,7 +135,7 @@ fetch(apiUrlAreaCode)
       isValid = false;
     }
 
-    if ((phoneNumber.trim() === '')&(length(phoneNumber) === 7)) {
+    if (phoneNumber.trim() === '' || phoneNumber.length != 7) {
       displayErrorMessage('Please enter valid phone number.');
       isValid = false;
     }
