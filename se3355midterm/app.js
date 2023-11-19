@@ -131,11 +131,11 @@ fetch(apiUrlAreaCode)
     }
 
     if (areaCode.trim() === '') {
-      displayErrorMessage('Please enter Area Code.');
+      displayErrorMessage('Please select Area Code.');
       isValid = false;
     }
 
-    if (phoneNumber.trim() === '' || phoneNumber.length != 7) {
+    if (phoneNumber.trim() === '' || phoneNumber.length !== 7) {
       displayErrorMessage('Please enter valid phone number.');
       isValid = false;
     }
