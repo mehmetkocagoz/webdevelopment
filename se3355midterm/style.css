@@ -18,16 +18,16 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
 }
 
 form{
     background-color: rgba(0, 0, 0, 0.5); /* Red background with 50% transparency */
     width: 40%;
-    height: 70%;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    display: block;
+    height: 80%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 30%;
     color: white;
 }
 
