@@ -111,58 +111,50 @@ fetch(apiUrlAreaCode)
    
     // Basic validation
     if (firstName.trim() === '') {
-      displayErrorMessage('Please enter First Name.');
-      isValid = false;
+      alert('Please enter First Name.');
+      return isValid = false;
     }
 
     if (lastName.trim() === '') {
-      displayErrorMessage('Please enter Last Name.');
-      isValid = false;
+      alert('Please enter Last Name.');
+      return isValid = false;
     }
     
     if (company === ''|| company === 'company') {
-      displayErrorMessage('Please select a Company.');
-      isValid = false;
+      alert('Please select a Company.');
+      return isValid = false;
     }
 
     if (email.trim() === '') {
-      displayErrorMessage('Please enter Email.');
-      isValid = false;
+      alert('Please enter Email.');
+      return isValid = false;
+    }else if (!email.includes('@')) {
+      alert('Email address must include @.');
+      return isValid = false;
     }
 
     if (areaCode.trim() === '') {
-      displayErrorMessage('Please select Area Code.');
-      isValid = false;
+      alert('Please select Area Code.');
+      return isValid = false;
     }
 
-    if (phoneNumber.trim() === '' || phoneNumber.length !== 7) {
-      displayErrorMessage('Please enter valid phone number.');
-      isValid = false;
+    if (phoneNumber.trim() === '') {
+      alert('Please enter valid phone number.');
+      return isValid = false;
+    }else if(phoneNumber.length !== 7){
+      alert("Phone number's length must be 7");
+      return isValid = false;
     }
 
     if (subject === '') {
-      displayErrorMessage('Please select a Subject.');
-      isValid = false;
+      alert('Please select a subject.');
+      return isValid = false;
     }
 
     if (!beginnerYes && !beginnerNo) {
-      displayErrorMessage('Please select if you are a beginner.');
-      isValid = false;
+      alert('Please select if you are a beginner.');
+      return isValid = false;
     }
 
     return isValid;
-  }
-
-  function displayErrorMessage(message) {
-    var errorDiv = document.createElement('div');
-    errorDiv.className = 'error-message';
-    errorDiv.textContent = message;
-
-    var formContent = document.querySelector('.form-content');
-    formContent.appendChild(errorDiv);
-
-    // Remove error message after 3 seconds (adjust as needed)
-    setTimeout(function() {
-      errorDiv.remove();
-    }, 3000);
   }
