@@ -154,7 +154,7 @@ select{
     }
 
     #radio1, #radio2{
-        width: 25%;
-        font-size: 0.5rem;
+        width: 45%;
+        font-size: 0.8rem;
     }
 }
