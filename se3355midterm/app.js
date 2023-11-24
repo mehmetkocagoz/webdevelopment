@@ -92,7 +92,7 @@ fetch(apiUrlAreaCode)
       event.preventDefault(); // Prevent the form from being submitted
     }else {
       // If the form is valid, redirect to another page
-      window.location.href = 'formsubmit.html';
+      window.location.href = '/formsubmit.html';
     }
   });
 
