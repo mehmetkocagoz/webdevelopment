@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin: 0;
   }
 
 html, body {
@@ -58,7 +59,6 @@ form{
 
 .input-box .input-field{
     flex-grow: 1;
-    padding-left: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -92,10 +92,10 @@ select{
 }
 
 .submit-button{
-    height: 3rem;
-    width: 10rem;
+    max-height: 3rem;
+    max-width: 10rem;
     background-color: aqua;
-    border-radius: 0.8rem;
+    border-radius: 0.8rem !important;
     color: white;
 }
 
@@ -106,9 +106,6 @@ select{
         display: block;
         text-align: center;
     }
-    .input-box h3{
-        font-size: 22px;
-    }
     .input-box .input-field{
         height: 80%;
     }
@@ -118,5 +115,38 @@ select{
     }
     #submit-field{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .input-box{
+        margin: 0rem;
+        margin-bottom: 0.5rem;
+        height: auto;
+    }
+    .input-box .input-field{
+        display: block;
+    }
+
+    .input-field .input-element{
+        width: 100%;
+    }
+
+
+    .input-box h3{
+        font-size: 0.8rem;
+    }
+
+    .input-box p{
+        font-size: 0.6rem;
+    }
+
+    #radio-field{
+        display: flex;
+    }
+
+    #radio1, #radio2{
+        width: 25%;
+        font-size: 0.5rem;
     }
 }
