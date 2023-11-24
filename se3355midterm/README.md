@@ -8,6 +8,7 @@ This project implements a web form with dynamic dropdowns populated using data f
 - [Project Structure](#project-structure)
 - [API Endpoints](#api-endpoints)
 - [Form Validation](#form-validation)
+- [Azure Deployment](#azure-deployment)
 
 ## Description
 
@@ -34,3 +35,7 @@ The project is a web form that collects user information, including name, compan
 ## Form Validation
 
 The form includes basic client-side validation to ensure that required fields are filled out and that email and phone number formats are valid. The validation logic is implemented in `app.js`.
+
+## Azure Deployment
+
+- **Deployed At**: [Deployment Address](https://nice-moss-0f5c11d0f.4.azurestaticapps.net/)
