@@ -102,6 +102,10 @@ select{
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {
+    form{
+        width: 50%;
+        margin-left: 25%;
+    }
     .input-box{
         display: block;
         text-align: center;
@@ -119,6 +123,10 @@ select{
 }
 
 @media screen and (max-width:600px) {
+    form{
+        width: 60%;
+        margin-left: 20%;
+    }
     .input-box{
         margin: 0rem;
         margin-bottom: 0.5rem;
